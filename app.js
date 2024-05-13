@@ -16,15 +16,15 @@
 
 
 
-// CODEE DAY 1
+// // CODEE DAY 2
 
-function hashtagGenerate(str){
-if(str.length >280 || str.trim()=== 0 ){
-    return false;
-}
-str  = str.split(' ');
-str =  str.map((curElem) => 
-    curElem.replace(curElem[0], curElem[0].toUpperCase()));
+// function hashtagGenerate(str){
+// if(str.length >280 || str.trim()=== 0 ){
+//     return false;
+// }
+// str  = str.split(' ');
+// str =  str.map((curElem) => 
+//     curElem.replace(curElem[0], curElem[0].toUpperCase()));
 
 
 
@@ -35,7 +35,35 @@ str =  str.map((curElem) =>
 // curElem.charAt(0).toUpperCase() + curElem.slice(1));
 
 
-str= ` #${str.join("")}`;
-console.log(str)
+// str= ` #${str.join("")}`;
+// console.log(str)
+// }
+// hashtagGenerate("muhammad wasi khan")
+
+
+ // CODEE DAY 3
+
+
+
+ function alphCount(){
+
+    
+
+ }
+ alphCount('development')
+function countChar(str,char){
+    str = str.toLowerCase();
+    char = char.toLowerCase();
+    let count = 0;
+    for(let i=0;i<str.length;i++){
+        if(str[i] === char){
+            count++;
+        }
+    }
+    return count;
 }
-hashtagGenerate("muhammad wasi khan")
+
+console.log(countChar('development',"e"));
+
+
+
