@@ -45,25 +45,44 @@
 
 
 
- function alphCount(){
+// function countChar(str,char){
+//     str = str.toLowerCase();
+//     char = char.toLowerCase();
+//     let count = 0;
+//     for(let i=0;i<str.length;i++){
+//         if(str[i] === char){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
 
-    
+// console.log(countChar('development',"e"));
 
- }
- alphCount('development')
-function countChar(str,char){
-    str = str.toLowerCase();
-    char = char.toLowerCase();
-    let count = 0;
-    for(let i=0;i<str.length;i++){
-        if(str[i] === char){
-            count++;
-        }
-    }
-    return count;
+// const  alphaCount =(word, str) =>{
+//     word = word.toLowerCase();
+//     str  = str.toLowerCase();
+
+//     total= word.split("").reduce((a ,b)=>{
+//         if(b === str){
+//             a++;
+//         }
+//         return a;
+
+//     },0)
+//     return total;
+// }
+// console.log(alphaCount('WASIHAN' , 'a'))
+
+
+// Day 5
+
+
+const trianglecheck=(a,b,c)=>{
+    if (a===b && b===c) return"equilateral";
+    if (a===b || b===c ||a ===c) return"isoscles";
+    return 'scalene'
 }
-
-console.log(countChar('development',"e"));
-
-
-
+console.log(trianglecheck(3,3,3))
+console.log(trianglecheck(3,4,5))
+console.log(trianglecheck(3,3,5))
