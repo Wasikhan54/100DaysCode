@@ -78,11 +78,38 @@
 // Day 5
 
 
-const trianglecheck=(a,b,c)=>{
-    if (a===b && b===c) return"equilateral";
-    if (a===b || b===c ||a ===c) return"isoscles";
-    return 'scalene'
-}
-console.log(trianglecheck(3,3,3))
-console.log(trianglecheck(3,4,5))
-console.log(trianglecheck(3,3,5))
+// const trianglecheck=(a,b,c)=>{
+//     if (a===b && b===c) return"equilateral";
+//     if (a===b || b===c ||a ===c) return"isoscles";
+//     return 'scalene'
+// }
+// console.log(trianglecheck(3,3,3))
+// console.log(trianglecheck(3,4,5))
+// console.log(trianglecheck(3,3,5))
+
+// Day 6
+
+
+// const arr = ["wasi","fahim","taha","khan","emaaz", 1 ,3 ,5 ,66]
+// console.log(arr.slice(5,8))
+
+// var text = 0.23113;
+// var newtext = Math.ceil(Math.random()*6);
+
+// console.log(newtext))
+
+
+
+     function tellTime() {
+         var now = new Date();
+         var theHr = now.getHours();
+         var theMin = now.getMinutes();
+         alert("Current time: "+ theHr + ":" + theMin);
+         
+     }tellTime()
+     function greetUser() {
+ alert("Hello, there.");
+ }
+ greetUser("wasihan")
+
+        
